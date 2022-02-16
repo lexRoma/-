@@ -1,0 +1,259 @@
+/* ================= clean styles ========================*/
+
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, /*label,*/ legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1.2;
+}
+ol {
+	padding-left: 1.4em;
+	list-style: decimal;
+}
+ul {
+	padding-left: 1.4em;
+	list-style: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+	font-style: inherit;
+}
+
+button {
+	background: none;
+	border: none;
+	padding: 0;
+	margin: 0;
+	cursor: pointer;
+}
+
+/* ================= clean styles ========================*/
+
+body {
+    background-color: #999;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 100%;
+}
+
+.section {
+    padding: 1.5%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.product__img {
+    height: 250px;
+    position: relative;
+     width: 100%;
+}
+
+.product__img:hover .img_2 {
+    opacity: 0;
+    transition: opacity .2s ease;
+}
+
+.product__img img {
+    height: 100%;
+    position: absolute;
+    object-fit: cover;
+    left: 20%;
+}
+
+.img_1 {
+    margin: 0 auto;
+    
+}
+
+.product__discount {
+    line-height: 1.5;
+    padding-top: 3%;
+    height: 3em;
+}
+
+.persents, .hit {
+    background-color: red;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: #fff;
+    padding: 2px 13px;
+    border-radius: 10%;
+}
+
+.best {
+    background-color: seagreen;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: #fff;
+    padding: 2px 13px;
+    border-radius: 0.3em;
+}
+
+.product__code, .product__reviews, .product__price--old {
+    color: #999;
+    font-weight: bold;
+}
+
+.product__discuont--text {
+    color: deepskyblue;
+    height: 1.2em;
+    overflow: hidden;
+}
+
+.product__name {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+    margin: 4% 0;
+    height: 51px;
+    overflow: hidden;
+}
+
+.section__item {
+    background-color: #fff;
+    width: 33%;
+    height: fit-content;
+    
+}
+
+.section__item:hover .chosen{
+    display: flex;
+}
+
+.section__item:hover .product__code {
+    visibility: visible;
+}
+
+.section__item:hover {
+    box-shadow: 0 0 10px red;
+}
+
+.item__inner {
+    padding: 8% 9%;
+}
+
+.product__code {
+    visibility: collapse;
+    margin-left: 70%;
+    padding-bottom: 5%;
+}
+
+.product__reviews {
+    padding-bottom: 4%;
+}
+
+.product__reviews a {
+    margin-left: 20px;
+}
+
+.product__price {
+    padding-bottom: 5%;
+}
+
+.product__price--main {
+    color: red;
+    font-size: 23px;
+    font-weight: 900;
+    padding-right: 4%;
+}
+
+.product__price--cashback {
+    background-color: wheat;
+    padding: 2px 13px;
+    border-radius: 6%;
+    width: fit-content;
+    white-space: nowrap;
+}
+
+.product__price--old {
+    text-decoration: line-through;
+}
+
+.chosen {
+    display: none;
+}
+
+.product__btn {
+    background-color: mediumseagreen;
+    color: #fff;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+    font-weight: bolder;
+    padding: 14px 50px;
+    border-radius: 13em/13em;
+    width: fit-content;
+    display: block;
+}
+
+.product__like, .product__compare {
+    font-size: 25px;
+    color: #999;
+    margin-left: 8%;
+}
+
+.section__item--1 .fa-star {
+    color: yellow;
+}
+
+.section__item--2 .fa-star {
+    color: yellow;
+}
+
+.section__item--2 .fa-star:nth-child(5) {
+    color: #999;
+}
+
+.section__item--3 .fa-star {
+    color: yellow;
+}
+
+
+@media ( max-width: 1199px) {
+    .product__img img {
+        left: 0;
+    }
+}
+
+@media ( max-width: 991px) {
+    .section__item {
+        width: 49%;
+        margin-bottom: 2%;
+    }
+    .chosen  {
+        display: flex;
+    }
+    .product__code {
+        visibility: visible;
+    }
+}
+
+@media ( max-width: 767px) {
+    .section__item {
+        width: 99%;
+       
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
